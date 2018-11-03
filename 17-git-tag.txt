@@ -1,0 +1,24 @@
+tag的创建
+
+git tag v1.0.0  //创建轻量标签
+
+git tag -a v1.0.0 -m "message" //创建附注标签
+
+git push origin v1.0.0 //将本地创建的tag推送到远程
+
+git tag -d v1.0.0  //删除本地的tag
+
+git push origin --delete v1.0.0 //删除远程的tag
+
+git push origin --tags //将本地的所有标签推送到远程
+
+git tag （git tag -l） //查看所有标签
+
+git tag -l 'v1.0.*' //显示tag为v1.0下的所有标签
+
+git show v1.0.0
+
+git checkout ttt<tagName> //切换到某个标签
+
+git tag -a v1.0.0 49e0...<commitId> //给指定的commit打标签
+

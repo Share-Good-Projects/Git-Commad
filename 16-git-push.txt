@@ -1,0 +1,8 @@
+git push //如果本地分支与远程分支存在映射关系，可以这样直接使用
+
+git push origin bbb<branchName>  //将当前分支推送到远程的bbb分支上，如果远程分支不存在，会新建一个bbb分支
+
+git push origin HEAD:bbb<branchName> 
+
+git push .....(如上命令) -f   //将本地缓存的repo 直接覆盖远程的repo
+ 
