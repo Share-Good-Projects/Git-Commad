@@ -1,0 +1,3 @@
+git merge xxx<branchName>    //将分支xxx（可以是远程分支），合并到当前分支
+
+git merge --abort           //取消当前的merge

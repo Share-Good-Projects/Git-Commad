@@ -1,0 +1,8 @@
+git reset  //将暂缓区的内容恢复到未暂缓状态，不更改本地文件的改变
+  
+//回退一个版本，将暂缓区的内容和本地已提交的内容恢复到未暂缓状态，不更改本地文件的改变,HEAD指向更改后的版本的CommitId
+git reset HEAD~1/HEAD^  （HEAD~2） 
+
+git reset --soft HEAD~1/HEAD^  （HEAD~2） //回退一个版本，不清楚暂缓区，将提交的内容回复到暂缓区，不影响本地文件的更改，HEAD指向也进行回退
+
+git reset --Hard HEAD~1/HEAD^  （HEAD~2） //回退一个版本，所有文件都恢复到这个版本，包括本地文件，暂缓区

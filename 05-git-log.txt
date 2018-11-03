@@ -1,0 +1,11 @@
+git log        //查看所有的commit 信息 ,不显示change的内容
+
+git log --oneline //显示历史commit的简洁信息：commitId 和 commit message
+
+git log -p    //输出每个commit的差异信息
+
+git log --stat //输出每一个commit的差异统计信息
+
+git log --graph //显示合并分支图
+
+git shoirtlog  //显示所有用户commit的次数 和 提交的message

@@ -1,0 +1,6 @@
+git status 
+//查看文件的状态
+1，unstracked  红色 -- 缓存区不存在该文件
+2,unmotify     白色  --未修改
+3，modify       绿色   ---文件有修改
+4 stage/repository(unmotity)     ---commit之后

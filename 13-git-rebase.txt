@@ -1,0 +1,3 @@
+git rebase -i startPoint endPoint
+
+git rebase startPoint endPont --onto xxx<branchName> //前开后闭--将当前分支上一段区间的commit复制粘贴到分支xxx上

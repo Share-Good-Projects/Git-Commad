@@ -1,0 +1,21 @@
+//把某另一个分支的一次commit,复制到当前分支上
+//如果没有冲突，自动提交commit ，message也会复制过来
+//如果存在冲突，放置在暂缓区，冲突解决后作为一次commit
+git cherry-pick xxx<commitId>  
+
+git cherry-pick -e<--edit> //cherry-pcik不发生冲突时，自定义commit message（00-文件有vim编辑器命令）
+
+git cherry-pick --abort //如果cherry-pick发生冲突时，实现撤销当前这次cherry-pick
+
+git cherry-pick --continue //当发生冲突的冲突时，执行--continue，不解决冲突的情况下，可以继续操作
+
+//将分支xxx上的所有commit 引入到当前分支,除相同祖先外
+//比如，branch01的commit: A ->B ->C  ,branch02的commit：B ->D ->E
+/当前的分支是branch01,HEAD =>C,执行git cherry-pick --branch01 => A ->B ->C ->D->E ,HEAD=>E
+git cherry-pick ..xxx<branchName>
+
+//其他分支(可以是多个分支)上的多个commitId 复制到当前的分支上，直接放置在暂缓区
+//多个commitId 最好按时间或者内容进行排序添加
+//暂缓区可以作为一次commit
+git cherry-pick -n xxx<commitId> yyy<commitId>
+

@@ -1,0 +1,13 @@
+git add [file1] [file2] ...  // 添加多个文件
+
+git add [dir]  //add某个目录下的所有文
+
+git add *.java  //添加所有的java文件 -- 文件格式添加
+
+git add -i  //查看已经追踪的和未追踪的所有文件
+
+git add -u  //只记录删除的文件到暂缓区
+
+git add -A  //添加所有状态的文到暂缓区，如果存在有文件修改过文件名的 有提示修改记件（rename）
+
+git add .  //添加project下所有已经修改过的文件

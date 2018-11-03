@@ -1,0 +1,26 @@
+git checkout xxx<branchName>  //切换到分支xxx
+
+git checkout ccc <commitId>  //根据commitId 切换到游离状态（Detach HEAD） 无分支名，可以基于当前状态创建一个新的分支，查看当前状态的代码
+
+git checkout -  //切换到当前分支的前一次分支
+
+git checkout . //从暂缓区index中恢复文件你，如果已经add进入了暂缓区 无法恢复
+
+git checkout t <tag name> //在当前分支上取出 tagname为t的版本
+
+git checkout -- xxx <fileName> //从暂缓区恢复某个指定的文件
+
+git checkout -b xxx   //切换到分支xxx ,如果当前分支不存在，基于当前的分支创建分支，并切换到当前的分支
+
+git checkout --b xxx yyy //切换分支xxx,如果当前分支不存在，基于分支yyy（可以是远程分支，commitId）创建分支，并切换到当前分支
+
+git checkout --orphan xxx //基于当前分支创建一个裸分支，没有commit的分支
+
+git checkout --merge xxx //基于当前分支创建一个分支，并将当前分支上的改变一起merge过去
+
+git checkout -p xxx <branchName>  //将当前分支与xxx分支，比较差异内容
+
+git　checkout -m xxx <branchName>  //从当前的分支切换到新分支xxx， 如果当前分支存在未commit的文件，也会一并搬到新的分支上xxx
+
+//用指定的commitId 或者 某分支下内容  替换到当前分支下的某个文件或某个某个文件夹
+git checkout xxx <commitId or branchName> --path <file or dirctory>

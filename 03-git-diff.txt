@@ -1,0 +1,12 @@
+git diff fileName          //比较工作区与暂缓区(stage)
+
+git diff --cached          //暂缓去与本地库(repository)的比较
+git diff --cached fileName //暂缓区与本地库的某个文件比较
+
+git diff HEAD fileName     //工作区与本地库的比较
+
+git diff commitId fileName //工作区 与某次提交的比较
+
+git diff --cached commitId fileName //暂缓区 与某次提交的比较
+
+git diff commitId-1 commitId-2 //某两次提交的比较

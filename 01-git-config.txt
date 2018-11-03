@@ -1,0 +1,18 @@
+//查看用户的git配置信息
+git config --system --list
+git config --global --list
+git config --local --list
+
+//用户配置
+git config --global user.name "XXX" //名称
+git config --global user.email xxx@qq.com //邮箱
+git config --global alias.yy xx //更改快捷方式xx->yy 比如：git branch -> git bra
+
+core.editor //文本编辑器
+merge.tool  //差异分析工具
+core.paper "less-N" //配置显示方式
+color.diff true //diff颜色配置
+core.filemode false //忽略修改权限的文件
+
+//删除配置
+git config --global --unset alias.xx  //删除alias中的xx属性

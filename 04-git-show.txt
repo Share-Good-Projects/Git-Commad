@@ -1,0 +1,10 @@
+git show  //展示最近一次(HEAD)commit的改变
+git show HEAD //查看HEAD标签指向的提交信息
+
+git show commitId  //查看某次历史提交信息
+
+git show xxx<branchName>  //查看某个分支最近一次提交的信息 -- git show master
+
+git show xxx^<branchName> //查看某个分支最近提交的前一次提交 -- git show master^
+
+git show xxx^<branchName> //查看某个分支最近提交的前一次的前一次的提交信息
