@@ -21,4 +21,3 @@ git show v1.0.0
 git checkout ttt<tagName> //切换到某个标签
 
 git tag -a v1.0.0 49e0...<commitId> //给指定的commit打标签
-
